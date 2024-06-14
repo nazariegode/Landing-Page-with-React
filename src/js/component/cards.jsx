@@ -1,60 +1,77 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
-
+import MyCard from './card.jsx';
 
 function Cards() {
     return (
-        <Row xs={1} md={1} className="g-1 d">
-            <div className='container p-3 col-12'>
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src="https://static.fundacion-affinity.org/cdn/farfuture/PVbbIC-0M9y4fPbbCsdvAD8bcjjtbFc0NSP3lRwlWcE/mtime:1643275542/sites/default/files/los-10-sonidos-principales-del-perro.jpg" />
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                        </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
-                    </Card.Body>
-                </Card>
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/15665/production/_107435678_perro1.jpg.webp" />
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                        </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
-                    </Card.Body>
-                </Card>
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src="https://www.ngenespanol.com/wp-content/uploads/2023/12/descubren-que-los-humanos-influimos-en-el-color-de-ojos-de-los-perros-1280x720.jpg" />
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                        </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
-                    </Card.Body>
-                </Card>
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src="https://www.eatingwell.com/thmb/m5xUzIOmhWSoXZnY-oZcO9SdArQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/article_291139_the-top-10-healthiest-foods-for-kids_-02-4b745e57928c4786a61b47d8ba920058.jpg" />
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                        </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
-                    </Card.Body>
-                </Card>
-            </div>
-        </Row>
+        <div className='container' id='pets'>
 
+            <div className="row">
+                <div className="col-md-3 d-flex py-3">
+                    <MyCard
+                        url="https://static.fundacion-affinity.org/cdn/farfuture/PVbbIC-0M9y4fPbbCsdvAD8bcjjtbFc0NSP3lRwlWcE/mtime:1643275542/sites/default/files/los-10-sonidos-principales-del-perro.jpg"
+                        titulo="Golden Retriever 🐾"
+                        description="El Golden Retriever es conocido por ser amigable y confiable, una excelente mascota para familias."
+                        textbut="¡Elige tu mascota!"
+                    />
+                </div>
+                <div className="col-md-3 d-flex py-3">
+                    <MyCard
+                        url="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/15665/production/_107435678_perro1.jpg.webp"
+                        titulo="Labrador Retriever"
+                        description="El Labrador Retriever es inteligente y versátil, ideal como perro de trabajo o compañía."
+                        textbut="¡Elige tu mascota!"
+                    />
+                </div>
+                <div className="col-md-3 d-flex py-3">
+                    <MyCard
+                        url="https://www.ngenespanol.com/wp-content/uploads/2023/12/descubren-que-los-humanos-influimos-en-el-color-de-ojos-de-los-perros-1280x720.jpg"
+                        titulo="Border Collie"
+                        description="El Border Collie es altamente energético y necesita mucho ejercicio mental y físico."
+                        textbut="¡Elige tu mascota!"
+                    />
+                </div>
+                <div className="col-md-3 d-flex py-3">
+                    <MyCard
+                        url="https://elarcadelfrances.com/wp-content/uploads/2021/09/WhatsApp-Image-2021-03-12-at-2.03.02-PM-10.jpeg"
+                        titulo="Bulldog Francés"
+                        description="El Bulldog Francés es pequeño pero robusto, con un carácter alegre y juguetón."
+                        textbut="¡Elige tu mascota!"
+                    />
+                </div>
+                <div className="col-md-3 d-flex py-3">
+                    <MyCard
+                        url="https://es.mypet.com/wp-content/uploads/sites/23/2021/03/razas-de-perros-pastor-aleman-570x455-1.jpg"
+                        titulo="Pastor Alemán"
+                        description="El Pastor Alemán es una raza versátil y atlética conocida por su lealtad e inteligencia."
+                        textbut="¡Elige tu mascota!"
+                    />
+                </div>
+                <div className="col-md-3 d-flex py-3">
+                    <MyCard
+                        url="https://image.petmd.com/files/styles/978x550/public/2023-01/toy-poodle.jpg"
+                        titulo="Poodle"
+                        description="Los Poodles son conocidos por su inteligencia excepcional y su pelaje rizado."
+                        textbut="¡Elige tu mascota!"
+                    />
+                </div>
+                <div className="col-md-3 d-flex py-3">
+                    <MyCard
+                        url="https://i0.wp.com/kennelclubargentino.org.ar/storage/2019/08/cachorro-beagle.jpg?fit=769%2C630&ssl=1"
+                        titulo="Beagle"
+                        description="El Beagle es un perro de tamaño mediano conocido por su nariz aguda y su disposición amistosa."
+                        textbut="¡Elige tu mascota!"
+                    />
+                </div>
+                <div className="col-md-3 d-flex py-3">
+                    <MyCard
+                        url="https://www.tiendanimal.es/articulos/wp-content/uploads/2019/02/foto-raza-perro-chihuahua-1200x900.jpg"
+                        titulo="Chihuahua"
+                        description="El Chihuahua es una de las razas más pequeñas del mundo, conocido por su tamaño diminuto y personalidad audaz."
+                        textbut="¡Elige tu mascota!"
+                    />
+                </div>
+            </div>
+        </div>
     );
 }
 
