@@ -20,9 +20,9 @@ const Contact = () => {
                 </div>
 
                 <div className="mb-3">
-                    <label className="form-label">Email address</label>
-                    <input type="text" className="form-control" />
-                    <div className="text-area">Put your email inside the label</div>
+                    <label className="form-label">Message</label>
+                    <textarea className="form-control" rows="4"></textarea>
+                    <div className="form-text">Write your message here</div>
                 </div>
 
                 <button type="submit" className="btn btn-secondary">Submit</button>
