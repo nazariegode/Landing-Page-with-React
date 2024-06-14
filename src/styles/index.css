@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 body {
-    background-image: url('https://landing-page-with-react-three.vercel.app/img/fondopets.png');
-    background-position: center;
-    /*     background-size: 100%;
- */
-
     font-family: "Nunito";
     font-optical-sizing: auto;
     font-weight: 600;
